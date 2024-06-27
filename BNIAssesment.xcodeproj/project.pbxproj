@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		306F4B218843970CF9D61E35 /* Pods_BNIAssesment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F708300971282EFD166FAEE /* Pods_BNIAssesment.framework */; };
 		E752A6B22C2D750900997921 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A6B12C2D750900997921 /* AppDelegate.swift */; };
 		E752A6BC2C2D750900997921 /* BNIAssesment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E752A6BA2C2D750900997921 /* BNIAssesment.xcdatamodeld */; };
 		E752A6BE2C2D750B00997921 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E752A6BD2C2D750B00997921 /* Assets.xcassets */; };
@@ -43,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F708300971282EFD166FAEE /* Pods_BNIAssesment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BNIAssesment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		718A4560DCED6AC04D1E0A10 /* Pods-BNIAssesment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BNIAssesment.debug.xcconfig"; path = "Target Support Files/Pods-BNIAssesment/Pods-BNIAssesment.debug.xcconfig"; sourceTree = "<group>"; };
+		C8AFEA7DED3B87D2D577D372 /* Pods-BNIAssesment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BNIAssesment.release.xcconfig"; path = "Target Support Files/Pods-BNIAssesment/Pods-BNIAssesment.release.xcconfig"; sourceTree = "<group>"; };
 		E752A6AE2C2D750900997921 /* BNIAssesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BNIAssesment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E752A6B12C2D750900997921 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E752A6BB2C2D750900997921 /* BNIAssesment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BNIAssesment.xcdatamodel; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306F4B218843970CF9D61E35 /* Pods_BNIAssesment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +95,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F75699CEF5289EBD91BFA85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F708300971282EFD166FAEE /* Pods_BNIAssesment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57445E72AC10E501399321B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				718A4560DCED6AC04D1E0A10 /* Pods-BNIAssesment.debug.xcconfig */,
+				C8AFEA7DED3B87D2D577D372 /* Pods-BNIAssesment.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E752A6A52C2D750900997921 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +120,8 @@
 				E752A6CA2C2D750B00997921 /* BNIAssesmentTests */,
 				E752A6D42C2D750B00997921 /* BNIAssesmentUITests */,
 				E752A6AF2C2D750900997921 /* Products */,
+				57445E72AC10E501399321B2 /* Pods */,
+				3F75699CEF5289EBD91BFA85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,6 +228,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E752A6DB2C2D750B00997921 /* Build configuration list for PBXNativeTarget "BNIAssesment" */;
 			buildPhases = (
+				2F999DEE69E8F7264EB0EC2D /* [CP] Check Pods Manifest.lock */,
 				E752A6AA2C2D750900997921 /* Sources */,
 				E752A6AB2C2D750900997921 /* Frameworks */,
 				E752A6AC2C2D750900997921 /* Resources */,
@@ -321,6 +347,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F999DEE69E8F7264EB0EC2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BNIAssesment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E752A6AA2C2D750900997921 /* Sources */ = {
@@ -505,6 +556,7 @@
 		};
 		E752A6DC2C2D750B00997921 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 718A4560DCED6AC04D1E0A10 /* Pods-BNIAssesment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -535,6 +587,7 @@
 		};
 		E752A6DD2C2D750B00997921 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8AFEA7DED3B87D2D577D372 /* Pods-BNIAssesment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
