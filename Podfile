@@ -6,5 +6,9 @@ workspace 'BNIAssesment'
 target 'BNIAssesment' do
   use_frameworks!
 
-
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'Alamofire'
+  pod 'Charts'
+  
 end

@@ -8,9 +8,12 @@
 import Foundation
 
 protocol HomeInteractor: BaseInteractor {
-    
+    func fetchSaldo() -> Int
 }
 
 class HomeInteractorImpl: HomeInteractor {
-    
+    func fetchSaldo() -> Int {
+        let saldo = UserDefaults.standard.integer(forKey: "saldo")
+        return saldo
+    }
 }

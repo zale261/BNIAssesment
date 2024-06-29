@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PromoDetailViewController" customModule="BNIAssesment" customModuleProvider="target">
+            <connections>
+                <outlet property="detailButton" destination="wiu-O3-JcQ" id="VUv-Jp-Nxa"/>
+                <outlet property="imageView" destination="CsQ-7W-KsE" id="zJi-DE-ge7"/>
+                <outlet property="titleLabel" destination="Ifo-kQ-1SF" id="HJK-Tj-EsR"/>
+                <outlet property="view" destination="iN0-l3-epB" id="8FO-cH-daA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_banner" translatesAutoresizingMaskIntoConstraints="NO" id="CsQ-7W-KsE">
+                    <rect key="frame" x="16" y="75" width="361" height="361"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="CsQ-7W-KsE" secondAttribute="height" id="aMf-iR-arK"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifo-kQ-1SF">
+                    <rect key="frame" x="16" y="444" width="361" height="20.333333333333314"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiu-O3-JcQ">
+                    <rect key="frame" x="16" y="472.33333333333331" width="67.666666666666671" height="35"/>
+                    <color key="backgroundColor" systemColor="linkColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Detail">
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Ifo-kQ-1SF" firstAttribute="top" secondItem="CsQ-7W-KsE" secondAttribute="bottom" constant="8" id="7yR-P3-uF7"/>
+                <constraint firstItem="CsQ-7W-KsE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="8Ef-AI-Lq7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ifo-kQ-1SF" secondAttribute="trailing" constant="16" id="Bu4-e6-Cfk"/>
+                <constraint firstItem="Ifo-kQ-1SF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="DPA-kc-YOq"/>
+                <constraint firstItem="wiu-O3-JcQ" firstAttribute="top" secondItem="Ifo-kQ-1SF" secondAttribute="bottom" constant="8" id="Jwu-yd-oCL"/>
+                <constraint firstItem="wiu-O3-JcQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="gVh-8B-EbC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CsQ-7W-KsE" secondAttribute="trailing" constant="16" id="wOa-Kh-8LK"/>
+                <constraint firstItem="CsQ-7W-KsE" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="yVt-Q2-hL9"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_banner" width="1106" height="1956"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

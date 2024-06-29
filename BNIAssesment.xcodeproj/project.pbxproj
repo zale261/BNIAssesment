@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		306F4B218843970CF9D61E35 /* Pods_BNIAssesment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F708300971282EFD166FAEE /* Pods_BNIAssesment.framework */; };
+		E71233452C2F016000384353 /* DetailTransaksiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71233442C2F016000384353 /* DetailTransaksiRouter.swift */; };
+		E71233472C2F017000384353 /* DetailTransaksiIntercator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71233462C2F017000384353 /* DetailTransaksiIntercator.swift */; };
+		E71233492C2F018000384353 /* DetailTransaksiPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71233482C2F018000384353 /* DetailTransaksiPresenter.swift */; };
+		E712334B2C2F018F00384353 /* DetailTransaksiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E712334A2C2F018F00384353 /* DetailTransaksiView.swift */; };
+		E712334D2C2F01A400384353 /* DetailTransaksiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E712334C2C2F01A300384353 /* DetailTransaksiViewController.swift */; };
+		E712334F2C2F01B300384353 /* DetailTransaksiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E712334E2C2F01B300384353 /* DetailTransaksiViewController.xib */; };
+		E71233512C2FD82E00384353 /* ScanQRInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71233502C2FD82E00384353 /* ScanQRInteractorTests.swift */; };
+		E71233532C2FD9BF00384353 /* PembayaranInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71233522C2FD9BF00384353 /* PembayaranInteractorTests.swift */; };
+		E71233552C2FE14300384353 /* RiwayatTransaksiInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71233542C2FE14300384353 /* RiwayatTransaksiInteractorTests.swift */; };
+		E71233572C2FE26F00384353 /* TopUpInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71233562C2FE26F00384353 /* TopUpInteractorTests.swift */; };
+		E71233592C2FE31600384353 /* PortfolioInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71233582C2FE31600384353 /* PortfolioInteractorTests.swift */; };
 		E752A6B22C2D750900997921 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A6B12C2D750900997921 /* AppDelegate.swift */; };
 		E752A6BC2C2D750900997921 /* BNIAssesment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E752A6BA2C2D750900997921 /* BNIAssesment.xcdatamodeld */; };
 		E752A6BE2C2D750B00997921 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E752A6BD2C2D750B00997921 /* Assets.xcassets */; };
@@ -24,6 +35,56 @@
 		E752A6F72C2D7A2A00997921 /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A6F62C2D7A2A00997921 /* BaseInteractor.swift */; };
 		E752A6F92C2D7A3E00997921 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A6F82C2D7A3E00997921 /* BasePresenter.swift */; };
 		E752A6FB2C2D7A4A00997921 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A6FA2C2D7A4A00997921 /* BaseView.swift */; };
+		E752A6FE2C2D8C2000997921 /* PromoListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A6FD2C2D8C2000997921 /* PromoListInteractor.swift */; };
+		E752A7002C2D8C4E00997921 /* Promo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A6FF2C2D8C4E00997921 /* Promo.swift */; };
+		E752A7032C2D8C9200997921 /* PromoListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7022C2D8C9200997921 /* PromoListPresenter.swift */; };
+		E752A7052C2D8CD100997921 /* PromoListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7042C2D8CD100997921 /* PromoListRouter.swift */; };
+		E752A7072C2D8D0C00997921 /* PromoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7062C2D8D0C00997921 /* PromoListViewController.swift */; };
+		E752A7092C2D8D4200997921 /* PromoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E752A7082C2D8D4200997921 /* PromoListViewController.xib */; };
+		E752A70B2C2D9DE400997921 /* PromoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A70A2C2D9DE400997921 /* PromoListView.swift */; };
+		E752A70D2C2DA0E000997921 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A70C2C2DA0E000997921 /* BaseRouter.swift */; };
+		E752A70F2C2DA0F900997921 /* BaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A70E2C2DA0F900997921 /* BaseEntity.swift */; };
+		E752A7122C2DC0EE00997921 /* PromoDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7112C2DC0EE00997921 /* PromoDetailRouter.swift */; };
+		E752A7142C2DC0FE00997921 /* PromoDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7132C2DC0FE00997921 /* PromoDetailInteractor.swift */; };
+		E752A7162C2DC11100997921 /* PromoDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7152C2DC11100997921 /* PromoDetailPresenter.swift */; };
+		E752A7182C2DC12300997921 /* PromoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7172C2DC12300997921 /* PromoDetailViewController.swift */; };
+		E752A71A2C2DC13C00997921 /* PromoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7192C2DC13C00997921 /* PromoDetailView.swift */; };
+		E752A71C2C2DC16300997921 /* PromoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E752A71B2C2DC16300997921 /* PromoDetailViewController.xib */; };
+		E752A71E2C2DE7F800997921 /* PromoListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A71D2C2DE7F800997921 /* PromoListInteractorTests.swift */; };
+		E752A7212C2E315700997921 /* TopUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7202C2E315700997921 /* TopUpRouter.swift */; };
+		E752A7232C2E316B00997921 /* TopUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7222C2E316B00997921 /* TopUpInteractor.swift */; };
+		E752A7252C2E317800997921 /* TopUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7242C2E317800997921 /* TopUpPresenter.swift */; };
+		E752A7272C2E318B00997921 /* TopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7262C2E318B00997921 /* TopUpView.swift */; };
+		E752A7292C2E319F00997921 /* TopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7282C2E319F00997921 /* TopUpViewController.swift */; };
+		E752A72B2C2E31A800997921 /* TopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E752A72A2C2E31A800997921 /* TopUpViewController.xib */; };
+		E752A72E2C2E3BE600997921 /* ScanQRRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A72D2C2E3BE600997921 /* ScanQRRouter.swift */; };
+		E752A7312C2E3C0100997921 /* ScanQRInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7302C2E3C0100997921 /* ScanQRInteractor.swift */; };
+		E752A7332C2E3C0E00997921 /* ScanQRPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7322C2E3C0E00997921 /* ScanQRPresenter.swift */; };
+		E752A7352C2E3C1A00997921 /* ScanQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7342C2E3C1A00997921 /* ScanQRView.swift */; };
+		E752A7372C2E3C2800997921 /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7362C2E3C2800997921 /* ScanQRViewController.swift */; };
+		E752A7392C2E3C3700997921 /* ScanQRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E752A7382C2E3C3700997921 /* ScanQRViewController.xib */; };
+		E752A73C2C2E3DC600997921 /* Transaksi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A73B2C2E3DC600997921 /* Transaksi.swift */; };
+		E752A73F2C2E565A00997921 /* PembayaranRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A73E2C2E565A00997921 /* PembayaranRouter.swift */; };
+		E752A7412C2E566A00997921 /* PembayaranInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7402C2E566A00997921 /* PembayaranInteractor.swift */; };
+		E752A7432C2E567900997921 /* PembayaranPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7422C2E567900997921 /* PembayaranPresenter.swift */; };
+		E752A7452C2E568900997921 /* PembayaranView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7442C2E568900997921 /* PembayaranView.swift */; };
+		E752A7472C2E56A600997921 /* PembayaranViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7462C2E56A600997921 /* PembayaranViewController.swift */; };
+		E752A7492C2E56AF00997921 /* PembayaranViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E752A7482C2E56AF00997921 /* PembayaranViewController.xib */; };
+		E752A74B2C2E65F300997921 /* RiwayatTransaksiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A74A2C2E65F300997921 /* RiwayatTransaksiManager.swift */; };
+		E752A74E2C2E8E5E00997921 /* RiwayatTransaksiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A74D2C2E8E5E00997921 /* RiwayatTransaksiRouter.swift */; };
+		E752A7502C2E8EA000997921 /* RiwayatTransaksiInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A74F2C2E8EA000997921 /* RiwayatTransaksiInteractor.swift */; };
+		E752A7542C2E8EC700997921 /* RiwayatTransaksiPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7532C2E8EC700997921 /* RiwayatTransaksiPresenter.swift */; };
+		E752A7562C2E8EE100997921 /* RiwayatTransaksiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7552C2E8EE100997921 /* RiwayatTransaksiView.swift */; };
+		E752A7582C2E8F0400997921 /* RiwayatTransaksiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7572C2E8F0400997921 /* RiwayatTransaksiViewController.swift */; };
+		E752A75A2C2E8F2300997921 /* RiwayatTransaksiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E752A7592C2E8F2300997921 /* RiwayatTransaksiViewController.xib */; };
+		E752A75E2C2EAA7C00997921 /* PortfolioRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A75D2C2EAA7C00997921 /* PortfolioRouter.swift */; };
+		E752A7602C2EAA9D00997921 /* PortfolioInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A75F2C2EAA9D00997921 /* PortfolioInteractor.swift */; };
+		E752A7622C2EAAAB00997921 /* PortfolioPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7612C2EAAAB00997921 /* PortfolioPresenter.swift */; };
+		E752A7642C2EAABC00997921 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7632C2EAABC00997921 /* PortfolioView.swift */; };
+		E752A7662C2EAAD300997921 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A7652C2EAAD300997921 /* PortfolioViewController.swift */; };
+		E752A7682C2EAAEA00997921 /* PortfolioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E752A7672C2EAAEA00997921 /* PortfolioViewController.xib */; };
+		E752A76A2C2EC55400997921 /* portfolio.json in Resources */ = {isa = PBXBuildFile; fileRef = E752A7692C2EC55400997921 /* portfolio.json */; };
+		E752A76D2C2EC5A300997921 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752A76C2C2EC5A300997921 /* Portfolio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +108,17 @@
 		0F708300971282EFD166FAEE /* Pods_BNIAssesment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BNIAssesment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		718A4560DCED6AC04D1E0A10 /* Pods-BNIAssesment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BNIAssesment.debug.xcconfig"; path = "Target Support Files/Pods-BNIAssesment/Pods-BNIAssesment.debug.xcconfig"; sourceTree = "<group>"; };
 		C8AFEA7DED3B87D2D577D372 /* Pods-BNIAssesment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BNIAssesment.release.xcconfig"; path = "Target Support Files/Pods-BNIAssesment/Pods-BNIAssesment.release.xcconfig"; sourceTree = "<group>"; };
+		E71233442C2F016000384353 /* DetailTransaksiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransaksiRouter.swift; sourceTree = "<group>"; };
+		E71233462C2F017000384353 /* DetailTransaksiIntercator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransaksiIntercator.swift; sourceTree = "<group>"; };
+		E71233482C2F018000384353 /* DetailTransaksiPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransaksiPresenter.swift; sourceTree = "<group>"; };
+		E712334A2C2F018F00384353 /* DetailTransaksiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransaksiView.swift; sourceTree = "<group>"; };
+		E712334C2C2F01A300384353 /* DetailTransaksiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransaksiViewController.swift; sourceTree = "<group>"; };
+		E712334E2C2F01B300384353 /* DetailTransaksiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTransaksiViewController.xib; sourceTree = "<group>"; };
+		E71233502C2FD82E00384353 /* ScanQRInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRInteractorTests.swift; sourceTree = "<group>"; };
+		E71233522C2FD9BF00384353 /* PembayaranInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PembayaranInteractorTests.swift; sourceTree = "<group>"; };
+		E71233542C2FE14300384353 /* RiwayatTransaksiInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatTransaksiInteractorTests.swift; sourceTree = "<group>"; };
+		E71233562C2FE26F00384353 /* TopUpInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpInteractorTests.swift; sourceTree = "<group>"; };
+		E71233582C2FE31600384353 /* PortfolioInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioInteractorTests.swift; sourceTree = "<group>"; };
 		E752A6AE2C2D750900997921 /* BNIAssesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BNIAssesment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E752A6B12C2D750900997921 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E752A6BB2C2D750900997921 /* BNIAssesment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BNIAssesment.xcdatamodel; sourceTree = "<group>"; };
@@ -67,6 +139,56 @@
 		E752A6F62C2D7A2A00997921 /* BaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
 		E752A6F82C2D7A3E00997921 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		E752A6FA2C2D7A4A00997921 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		E752A6FD2C2D8C2000997921 /* PromoListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoListInteractor.swift; sourceTree = "<group>"; };
+		E752A6FF2C2D8C4E00997921 /* Promo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promo.swift; sourceTree = "<group>"; };
+		E752A7022C2D8C9200997921 /* PromoListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoListPresenter.swift; sourceTree = "<group>"; };
+		E752A7042C2D8CD100997921 /* PromoListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoListRouter.swift; sourceTree = "<group>"; };
+		E752A7062C2D8D0C00997921 /* PromoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoListViewController.swift; sourceTree = "<group>"; };
+		E752A7082C2D8D4200997921 /* PromoListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromoListViewController.xib; sourceTree = "<group>"; };
+		E752A70A2C2D9DE400997921 /* PromoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoListView.swift; sourceTree = "<group>"; };
+		E752A70C2C2DA0E000997921 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		E752A70E2C2DA0F900997921 /* BaseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEntity.swift; sourceTree = "<group>"; };
+		E752A7112C2DC0EE00997921 /* PromoDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoDetailRouter.swift; sourceTree = "<group>"; };
+		E752A7132C2DC0FE00997921 /* PromoDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoDetailInteractor.swift; sourceTree = "<group>"; };
+		E752A7152C2DC11100997921 /* PromoDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoDetailPresenter.swift; sourceTree = "<group>"; };
+		E752A7172C2DC12300997921 /* PromoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoDetailViewController.swift; sourceTree = "<group>"; };
+		E752A7192C2DC13C00997921 /* PromoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoDetailView.swift; sourceTree = "<group>"; };
+		E752A71B2C2DC16300997921 /* PromoDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromoDetailViewController.xib; sourceTree = "<group>"; };
+		E752A71D2C2DE7F800997921 /* PromoListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoListInteractorTests.swift; sourceTree = "<group>"; };
+		E752A7202C2E315700997921 /* TopUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpRouter.swift; sourceTree = "<group>"; };
+		E752A7222C2E316B00997921 /* TopUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpInteractor.swift; sourceTree = "<group>"; };
+		E752A7242C2E317800997921 /* TopUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpPresenter.swift; sourceTree = "<group>"; };
+		E752A7262C2E318B00997921 /* TopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpView.swift; sourceTree = "<group>"; };
+		E752A7282C2E319F00997921 /* TopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpViewController.swift; sourceTree = "<group>"; };
+		E752A72A2C2E31A800997921 /* TopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopUpViewController.xib; sourceTree = "<group>"; };
+		E752A72D2C2E3BE600997921 /* ScanQRRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRRouter.swift; sourceTree = "<group>"; };
+		E752A7302C2E3C0100997921 /* ScanQRInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRInteractor.swift; sourceTree = "<group>"; };
+		E752A7322C2E3C0E00997921 /* ScanQRPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRPresenter.swift; sourceTree = "<group>"; };
+		E752A7342C2E3C1A00997921 /* ScanQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRView.swift; sourceTree = "<group>"; };
+		E752A7362C2E3C2800997921 /* ScanQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
+		E752A7382C2E3C3700997921 /* ScanQRViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanQRViewController.xib; sourceTree = "<group>"; };
+		E752A73B2C2E3DC600997921 /* Transaksi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaksi.swift; sourceTree = "<group>"; };
+		E752A73E2C2E565A00997921 /* PembayaranRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PembayaranRouter.swift; sourceTree = "<group>"; };
+		E752A7402C2E566A00997921 /* PembayaranInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PembayaranInteractor.swift; sourceTree = "<group>"; };
+		E752A7422C2E567900997921 /* PembayaranPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PembayaranPresenter.swift; sourceTree = "<group>"; };
+		E752A7442C2E568900997921 /* PembayaranView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PembayaranView.swift; sourceTree = "<group>"; };
+		E752A7462C2E56A600997921 /* PembayaranViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PembayaranViewController.swift; sourceTree = "<group>"; };
+		E752A7482C2E56AF00997921 /* PembayaranViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PembayaranViewController.xib; sourceTree = "<group>"; };
+		E752A74A2C2E65F300997921 /* RiwayatTransaksiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatTransaksiManager.swift; sourceTree = "<group>"; };
+		E752A74D2C2E8E5E00997921 /* RiwayatTransaksiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatTransaksiRouter.swift; sourceTree = "<group>"; };
+		E752A74F2C2E8EA000997921 /* RiwayatTransaksiInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatTransaksiInteractor.swift; sourceTree = "<group>"; };
+		E752A7532C2E8EC700997921 /* RiwayatTransaksiPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatTransaksiPresenter.swift; sourceTree = "<group>"; };
+		E752A7552C2E8EE100997921 /* RiwayatTransaksiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatTransaksiView.swift; sourceTree = "<group>"; };
+		E752A7572C2E8F0400997921 /* RiwayatTransaksiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatTransaksiViewController.swift; sourceTree = "<group>"; };
+		E752A7592C2E8F2300997921 /* RiwayatTransaksiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RiwayatTransaksiViewController.xib; sourceTree = "<group>"; };
+		E752A75D2C2EAA7C00997921 /* PortfolioRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioRouter.swift; sourceTree = "<group>"; };
+		E752A75F2C2EAA9D00997921 /* PortfolioInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioInteractor.swift; sourceTree = "<group>"; };
+		E752A7612C2EAAAB00997921 /* PortfolioPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioPresenter.swift; sourceTree = "<group>"; };
+		E752A7632C2EAABC00997921 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
+		E752A7652C2EAAD300997921 /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
+		E752A7672C2EAAEA00997921 /* PortfolioViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PortfolioViewController.xib; sourceTree = "<group>"; };
+		E752A7692C2EC55400997921 /* portfolio.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = portfolio.json; sourceTree = "<group>"; };
+		E752A76C2C2EC5A300997921 /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +231,20 @@
 				718A4560DCED6AC04D1E0A10 /* Pods-BNIAssesment.debug.xcconfig */,
 				C8AFEA7DED3B87D2D577D372 /* Pods-BNIAssesment.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E71233432C2F013500384353 /* DetailTransaksi */ = {
+			isa = PBXGroup;
+			children = (
+				E71233442C2F016000384353 /* DetailTransaksiRouter.swift */,
+				E71233462C2F017000384353 /* DetailTransaksiIntercator.swift */,
+				E71233482C2F018000384353 /* DetailTransaksiPresenter.swift */,
+				E712334A2C2F018F00384353 /* DetailTransaksiView.swift */,
+				E712334C2C2F01A300384353 /* DetailTransaksiViewController.swift */,
+				E712334E2C2F01B300384353 /* DetailTransaksiViewController.xib */,
+			);
+			path = DetailTransaksi;
 			sourceTree = "<group>";
 		};
 		E752A6A52C2D750900997921 = {
@@ -150,6 +284,12 @@
 			isa = PBXGroup;
 			children = (
 				E752A6CB2C2D750B00997921 /* BNIAssesmentTests.swift */,
+				E752A71D2C2DE7F800997921 /* PromoListInteractorTests.swift */,
+				E71233502C2FD82E00384353 /* ScanQRInteractorTests.swift */,
+				E71233522C2FD9BF00384353 /* PembayaranInteractorTests.swift */,
+				E71233542C2FE14300384353 /* RiwayatTransaksiInteractorTests.swift */,
+				E71233562C2FE26F00384353 /* TopUpInteractorTests.swift */,
+				E71233582C2FE31600384353 /* PortfolioInteractorTests.swift */,
 			);
 			path = BNIAssesmentTests;
 			sourceTree = "<group>";
@@ -175,6 +315,14 @@
 			isa = PBXGroup;
 			children = (
 				E752A6E62C2D76AA00997921 /* Home */,
+				E752A72C2C2E3B9200997921 /* ScanQR */,
+				E752A73D2C2E560000997921 /* Pembayaran */,
+				E752A74C2C2E8E2600997921 /* RiwayatTransaksi */,
+				E752A71F2C2E313500997921 /* TopUp */,
+				E752A6FC2C2D8AC800997921 /* PromoList */,
+				E752A7102C2DC07800997921 /* PromoDetail */,
+				E752A75C2C2EAA4A00997921 /* Portfolio */,
+				E71233432C2F013500384353 /* DetailTransaksi */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -182,9 +330,9 @@
 		E752A6E62C2D76AA00997921 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E752A6EA2C2D77A100997921 /* HomeRouter.swift */,
 				E752A6EC2C2D781100997921 /* HomeInteractor.swift */,
 				E752A6EE2C2D781F00997921 /* HomePresenter.swift */,
-				E752A6EA2C2D77A100997921 /* HomeRouter.swift */,
 				E752A6F02C2D788A00997921 /* HomeView.swift */,
 				E752A6E82C2D778A00997921 /* HomeViewController.swift */,
 				E752A6F22C2D78B200997921 /* HomeViewController.xib */,
@@ -195,6 +343,7 @@
 		E752A6E72C2D76D800997921 /* File System */ = {
 			isa = PBXGroup;
 			children = (
+				E752A7692C2EC55400997921 /* portfolio.json */,
 				E752A6BD2C2D750B00997921 /* Assets.xcassets */,
 				E752A6C22C2D750B00997921 /* Info.plist */,
 				E752A6BF2C2D750B00997921 /* LaunchScreen.storyboard */,
@@ -207,6 +356,7 @@
 			isa = PBXGroup;
 			children = (
 				E752A6F52C2D79F300997921 /* Base */,
+				E752A74A2C2E65F300997921 /* RiwayatTransaksiManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -214,11 +364,131 @@
 		E752A6F52C2D79F300997921 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				E752A6FA2C2D7A4A00997921 /* BaseView.swift */,
 				E752A6F62C2D7A2A00997921 /* BaseInteractor.swift */,
 				E752A6F82C2D7A3E00997921 /* BasePresenter.swift */,
-				E752A6FA2C2D7A4A00997921 /* BaseView.swift */,
+				E752A70E2C2DA0F900997921 /* BaseEntity.swift */,
+				E752A70C2C2DA0E000997921 /* BaseRouter.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		E752A6FC2C2D8AC800997921 /* PromoList */ = {
+			isa = PBXGroup;
+			children = (
+				E752A7042C2D8CD100997921 /* PromoListRouter.swift */,
+				E752A6FD2C2D8C2000997921 /* PromoListInteractor.swift */,
+				E752A7022C2D8C9200997921 /* PromoListPresenter.swift */,
+				E752A70A2C2D9DE400997921 /* PromoListView.swift */,
+				E752A7062C2D8D0C00997921 /* PromoListViewController.swift */,
+				E752A7082C2D8D4200997921 /* PromoListViewController.xib */,
+				E752A7012C2D8C5C00997921 /* Entities */,
+			);
+			path = PromoList;
+			sourceTree = "<group>";
+		};
+		E752A7012C2D8C5C00997921 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E752A6FF2C2D8C4E00997921 /* Promo.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E752A7102C2DC07800997921 /* PromoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E752A7112C2DC0EE00997921 /* PromoDetailRouter.swift */,
+				E752A7132C2DC0FE00997921 /* PromoDetailInteractor.swift */,
+				E752A7152C2DC11100997921 /* PromoDetailPresenter.swift */,
+				E752A7192C2DC13C00997921 /* PromoDetailView.swift */,
+				E752A7172C2DC12300997921 /* PromoDetailViewController.swift */,
+				E752A71B2C2DC16300997921 /* PromoDetailViewController.xib */,
+			);
+			path = PromoDetail;
+			sourceTree = "<group>";
+		};
+		E752A71F2C2E313500997921 /* TopUp */ = {
+			isa = PBXGroup;
+			children = (
+				E752A7202C2E315700997921 /* TopUpRouter.swift */,
+				E752A7222C2E316B00997921 /* TopUpInteractor.swift */,
+				E752A7242C2E317800997921 /* TopUpPresenter.swift */,
+				E752A7262C2E318B00997921 /* TopUpView.swift */,
+				E752A7282C2E319F00997921 /* TopUpViewController.swift */,
+				E752A72A2C2E31A800997921 /* TopUpViewController.xib */,
+			);
+			path = TopUp;
+			sourceTree = "<group>";
+		};
+		E752A72C2C2E3B9200997921 /* ScanQR */ = {
+			isa = PBXGroup;
+			children = (
+				E752A72D2C2E3BE600997921 /* ScanQRRouter.swift */,
+				E752A7302C2E3C0100997921 /* ScanQRInteractor.swift */,
+				E752A7322C2E3C0E00997921 /* ScanQRPresenter.swift */,
+				E752A7342C2E3C1A00997921 /* ScanQRView.swift */,
+				E752A7362C2E3C2800997921 /* ScanQRViewController.swift */,
+				E752A7382C2E3C3700997921 /* ScanQRViewController.xib */,
+				E752A73A2C2E3D9A00997921 /* Entities */,
+			);
+			path = ScanQR;
+			sourceTree = "<group>";
+		};
+		E752A73A2C2E3D9A00997921 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E752A73B2C2E3DC600997921 /* Transaksi.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E752A73D2C2E560000997921 /* Pembayaran */ = {
+			isa = PBXGroup;
+			children = (
+				E752A73E2C2E565A00997921 /* PembayaranRouter.swift */,
+				E752A7402C2E566A00997921 /* PembayaranInteractor.swift */,
+				E752A7422C2E567900997921 /* PembayaranPresenter.swift */,
+				E752A7442C2E568900997921 /* PembayaranView.swift */,
+				E752A7462C2E56A600997921 /* PembayaranViewController.swift */,
+				E752A7482C2E56AF00997921 /* PembayaranViewController.xib */,
+			);
+			path = Pembayaran;
+			sourceTree = "<group>";
+		};
+		E752A74C2C2E8E2600997921 /* RiwayatTransaksi */ = {
+			isa = PBXGroup;
+			children = (
+				E752A74D2C2E8E5E00997921 /* RiwayatTransaksiRouter.swift */,
+				E752A74F2C2E8EA000997921 /* RiwayatTransaksiInteractor.swift */,
+				E752A7532C2E8EC700997921 /* RiwayatTransaksiPresenter.swift */,
+				E752A7552C2E8EE100997921 /* RiwayatTransaksiView.swift */,
+				E752A7572C2E8F0400997921 /* RiwayatTransaksiViewController.swift */,
+				E752A7592C2E8F2300997921 /* RiwayatTransaksiViewController.xib */,
+			);
+			path = RiwayatTransaksi;
+			sourceTree = "<group>";
+		};
+		E752A75C2C2EAA4A00997921 /* Portfolio */ = {
+			isa = PBXGroup;
+			children = (
+				E752A75D2C2EAA7C00997921 /* PortfolioRouter.swift */,
+				E752A75F2C2EAA9D00997921 /* PortfolioInteractor.swift */,
+				E752A7612C2EAAAB00997921 /* PortfolioPresenter.swift */,
+				E752A7632C2EAABC00997921 /* PortfolioView.swift */,
+				E752A7652C2EAAD300997921 /* PortfolioViewController.swift */,
+				E752A7672C2EAAEA00997921 /* PortfolioViewController.xib */,
+				E752A76B2C2EC58700997921 /* Entities */,
+			);
+			path = Portfolio;
+			sourceTree = "<group>";
+		};
+		E752A76B2C2EC58700997921 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E752A76C2C2EC5A300997921 /* Portfolio.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +502,7 @@
 				E752A6AA2C2D750900997921 /* Sources */,
 				E752A6AB2C2D750900997921 /* Frameworks */,
 				E752A6AC2C2D750900997921 /* Resources */,
+				210D8FC920F93A00140D17C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -326,9 +597,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E712334F2C2F01B300384353 /* DetailTransaksiViewController.xib in Resources */,
+				E752A75A2C2E8F2300997921 /* RiwayatTransaksiViewController.xib in Resources */,
+				E752A71C2C2DC16300997921 /* PromoDetailViewController.xib in Resources */,
+				E752A7392C2E3C3700997921 /* ScanQRViewController.xib in Resources */,
+				E752A7092C2D8D4200997921 /* PromoListViewController.xib in Resources */,
 				E752A6C12C2D750B00997921 /* LaunchScreen.storyboard in Resources */,
+				E752A7492C2E56AF00997921 /* PembayaranViewController.xib in Resources */,
 				E752A6BE2C2D750B00997921 /* Assets.xcassets in Resources */,
 				E752A6F32C2D78B200997921 /* HomeViewController.xib in Resources */,
+				E752A76A2C2EC55400997921 /* portfolio.json in Resources */,
+				E752A72B2C2E31A800997921 /* TopUpViewController.xib in Resources */,
+				E752A7682C2EAAEA00997921 /* PortfolioViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +629,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		210D8FC920F93A00140D17C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BNIAssesment/Pods-BNIAssesment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BNIAssesment/Pods-BNIAssesment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BNIAssesment/Pods-BNIAssesment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2F999DEE69E8F7264EB0EC2D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -378,16 +675,62 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E752A6FE2C2D8C2000997921 /* PromoListInteractor.swift in Sources */,
+				E752A7272C2E318B00997921 /* TopUpView.swift in Sources */,
+				E752A7142C2DC0FE00997921 /* PromoDetailInteractor.swift in Sources */,
+				E752A7542C2E8EC700997921 /* RiwayatTransaksiPresenter.swift in Sources */,
+				E752A74E2C2E8E5E00997921 /* RiwayatTransaksiRouter.swift in Sources */,
+				E752A70F2C2DA0F900997921 /* BaseEntity.swift in Sources */,
+				E752A7072C2D8D0C00997921 /* PromoListViewController.swift in Sources */,
+				E752A70B2C2D9DE400997921 /* PromoListView.swift in Sources */,
+				E752A7212C2E315700997921 /* TopUpRouter.swift in Sources */,
+				E752A7032C2D8C9200997921 /* PromoListPresenter.swift in Sources */,
 				E752A6BC2C2D750900997921 /* BNIAssesment.xcdatamodeld in Sources */,
+				E752A7122C2DC0EE00997921 /* PromoDetailRouter.swift in Sources */,
 				E752A6F92C2D7A3E00997921 /* BasePresenter.swift in Sources */,
+				E752A7292C2E319F00997921 /* TopUpViewController.swift in Sources */,
+				E752A7432C2E567900997921 /* PembayaranPresenter.swift in Sources */,
+				E752A7412C2E566A00997921 /* PembayaranInteractor.swift in Sources */,
+				E752A7332C2E3C0E00997921 /* ScanQRPresenter.swift in Sources */,
+				E752A7002C2D8C4E00997921 /* Promo.swift in Sources */,
+				E752A7352C2E3C1A00997921 /* ScanQRView.swift in Sources */,
+				E752A7602C2EAA9D00997921 /* PortfolioInteractor.swift in Sources */,
 				E752A6F12C2D788A00997921 /* HomeView.swift in Sources */,
 				E752A6EB2C2D77A100997921 /* HomeRouter.swift in Sources */,
+				E752A70D2C2DA0E000997921 /* BaseRouter.swift in Sources */,
 				E752A6B22C2D750900997921 /* AppDelegate.swift in Sources */,
 				E752A6EF2C2D781F00997921 /* HomePresenter.swift in Sources */,
+				E752A7622C2EAAAB00997921 /* PortfolioPresenter.swift in Sources */,
+				E752A7372C2E3C2800997921 /* ScanQRViewController.swift in Sources */,
 				E752A6F72C2D7A2A00997921 /* BaseInteractor.swift in Sources */,
+				E752A72E2C2E3BE600997921 /* ScanQRRouter.swift in Sources */,
+				E752A7252C2E317800997921 /* TopUpPresenter.swift in Sources */,
+				E71233492C2F018000384353 /* DetailTransaksiPresenter.swift in Sources */,
+				E752A7642C2EAABC00997921 /* PortfolioView.swift in Sources */,
+				E752A7662C2EAAD300997921 /* PortfolioViewController.swift in Sources */,
+				E752A7452C2E568900997921 /* PembayaranView.swift in Sources */,
+				E752A7162C2DC11100997921 /* PromoDetailPresenter.swift in Sources */,
+				E752A7052C2D8CD100997921 /* PromoListRouter.swift in Sources */,
+				E752A73C2C2E3DC600997921 /* Transaksi.swift in Sources */,
 				E752A6FB2C2D7A4A00997921 /* BaseView.swift in Sources */,
 				E752A6ED2C2D781100997921 /* HomeInteractor.swift in Sources */,
+				E71233452C2F016000384353 /* DetailTransaksiRouter.swift in Sources */,
+				E712334D2C2F01A400384353 /* DetailTransaksiViewController.swift in Sources */,
+				E752A7472C2E56A600997921 /* PembayaranViewController.swift in Sources */,
+				E752A75E2C2EAA7C00997921 /* PortfolioRouter.swift in Sources */,
+				E712334B2C2F018F00384353 /* DetailTransaksiView.swift in Sources */,
 				E752A6E92C2D778A00997921 /* HomeViewController.swift in Sources */,
+				E752A7582C2E8F0400997921 /* RiwayatTransaksiViewController.swift in Sources */,
+				E752A76D2C2EC5A300997921 /* Portfolio.swift in Sources */,
+				E752A7312C2E3C0100997921 /* ScanQRInteractor.swift in Sources */,
+				E752A7562C2E8EE100997921 /* RiwayatTransaksiView.swift in Sources */,
+				E752A71A2C2DC13C00997921 /* PromoDetailView.swift in Sources */,
+				E752A74B2C2E65F300997921 /* RiwayatTransaksiManager.swift in Sources */,
+				E752A7502C2E8EA000997921 /* RiwayatTransaksiInteractor.swift in Sources */,
+				E752A7232C2E316B00997921 /* TopUpInteractor.swift in Sources */,
+				E71233472C2F017000384353 /* DetailTransaksiIntercator.swift in Sources */,
+				E752A7182C2DC12300997921 /* PromoDetailViewController.swift in Sources */,
+				E752A73F2C2E565A00997921 /* PembayaranRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +738,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E71233532C2FD9BF00384353 /* PembayaranInteractorTests.swift in Sources */,
+				E752A71E2C2DE7F800997921 /* PromoListInteractorTests.swift in Sources */,
 				E752A6CC2C2D750B00997921 /* BNIAssesmentTests.swift in Sources */,
+				E71233592C2FE31600384353 /* PortfolioInteractorTests.swift in Sources */,
+				E71233512C2FD82E00384353 /* ScanQRInteractorTests.swift in Sources */,
+				E71233552C2FE14300384353 /* RiwayatTransaksiInteractorTests.swift in Sources */,
+				E71233572C2FE26F00384353 /* TopUpInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +821,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -535,7 +884,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -565,6 +914,7 @@
 				DEVELOPMENT_TEAM = Y72844WRYQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BNIAssesment/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is used to scan QR";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -596,6 +946,7 @@
 				DEVELOPMENT_TEAM = Y72844WRYQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BNIAssesment/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is used to scan QR";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

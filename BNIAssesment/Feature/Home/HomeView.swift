@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol HomeView: BaseView {
-    var presenter: HomePresenter? { get set }
+protocol HomeView {
+    var presenter: HomePresenter! { get set }
 }
